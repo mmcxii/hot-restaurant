@@ -1,14 +1,16 @@
 const reservations = [
     {
-    customerName: "1",
+    customerName: "One",
     phoneNumber: "bbbb",
-    customerEmail: "cccc",
-    customerID: "dddd"
+    customerEmail: "cccc@gmail.com",
+    customerID: "1"
     },
     {
-    customerName: "2",
+    customerName: "Two",
     phoneNumber: "234123413",
-    customerEmail: "2134132",
-    customerID: "34244" 
+    customerEmail: "2134132@gmail.com",
+    customerID: "2" 
     }
-]
+];
+
+module.exports = reservations;
