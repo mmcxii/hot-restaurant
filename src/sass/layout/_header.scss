@@ -1,4 +1,8 @@
 .header {
     padding-top: $spacing-sm;
     text-align: center;
+
+    .nav {
+        margin-top: $spacing-xs;
+    }
 }
