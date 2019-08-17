@@ -2,6 +2,7 @@ const router = require('express').Router();
 
 const waitlist = require('../../data/waitlist');
 const reservations = require('../../data/reservations');
+const tableInfo = require('../../data/tableinfo');
 
 // app.use(express.urlencoded({ extended: true }));
 // app.use(express.json());
@@ -23,6 +24,11 @@ const apiRoute = router.get('/api/:type', (req, res) => {
             break;
     }
 });
+
+router.get('/tables.html', (req, res) => {
+    console.log(req);
+    return res.json(tableInfo);
+})
 
 router.post('/reserve.html', (req, res) => {
 
