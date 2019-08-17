@@ -1,0 +1,30 @@
+{
+  "name": "hot-restaurant",
+  "version": "1.0.0",
+  "description": "Class hot restaurant",
+  "main": "server.js",
+  "scripts": {
+    "test": "N/A",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmcxii/hot-restaurant.git"
+  },
+  "keywords": [
+    "Hot",
+    "Restaurant"
+  ],
+  "author": "The boiz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mmcxii/hot-restaurant/issues"
+  },
+  "homepage": "https://github.com/mmcxii/hot-restaurant#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
