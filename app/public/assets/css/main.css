@@ -12,9 +12,19 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body {
   background: var(--clr-dark);
   color: var(--clr-light);
 }
 
 /* Layout */
+.footer {
+  margin-top: auto;
+}
+
 /* Components */
