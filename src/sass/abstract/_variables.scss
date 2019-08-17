@@ -8,7 +8,11 @@ $breakpoints: (
 $spacing-xs: 0.5rem;
 $spacing-sm: 1rem;
 
+$rounded: 15px;
+
 :root {
     --clr-dark: #333;
+    --clr-dark-2: #222;
+    --clr-dark-3: #111;
     --clr-light: #eee;
 }
