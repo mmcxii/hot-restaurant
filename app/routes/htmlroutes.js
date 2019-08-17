@@ -1,6 +1,6 @@
 const express = require('express');
 const path = require('path');
 
-const index = express.static(path.join(__dirname, '../public'));
+const static = express.static(path.join(path.dirname(require.main.filename), 'app/public'));
 
-module.exports = index;
+module.exports = static;
