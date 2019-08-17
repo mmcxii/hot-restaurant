@@ -2,6 +2,7 @@ const router = require('express').Router();
 
 const waitlist = require('../../data/waitlist');
 const reservations = require('../../data/reservations');
+const tableInfo = require('../../data/tableinfo');
 
 // app.use(express.urlencoded({ extended: true }));
 // app.use(express.json());
@@ -17,6 +18,9 @@ const apiRoute = router.get('/api/:type', (req, res) => {
             break;
         case 'reservations':
             res.json(reservations);
+            break;
+        case 'tables':
+            res.json(tableInfo);
             break;
         default:
             res.send('Whoops. That\'s an invalid parameter');
