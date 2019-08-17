@@ -19,16 +19,14 @@ const apiRoute = router.get('/api/:type', (req, res) => {
         case 'reservations':
             res.json(reservations);
             break;
+        case 'tables':
+            res.json(tableInfo);
+            break;
         default:
             res.send('Whoops. That\'s an invalid parameter');
             break;
     }
 });
-
-router.get('/tables.html', (req, res) => {
-    console.log(req);
-    return res.json(tableInfo);
-})
 
 router.post('/reserve.html', (req, res) => {
 
