@@ -10,7 +10,7 @@
     <body>
         <header class="header">
             <h1 class="header__title">Hot Restaurants</h1>
-            <h2 class="header__subtitle">We only have # tables available!</h2>
+            <h2 class="header__subtitle">We only have <span class="num-tables">#</span> tables available!</h2>
 
             <nav class="nav">
                 <ul class="nav__list">
@@ -26,9 +26,23 @@
                 </ul>
             </nav>
         </header>
-        <main class="main"></main>
+        <main class="main">
+            <div class="card">
+                <h2 class="card__header">Welcome to Hot Restaurants!</h2>
+                <section class="card__body">
+                    <p class="card__text">
+                        We only have <span class="num-tables">#</span> tables left! Use the buttons above to
+                        make a reservation!
+                    </p>
+                </section>
+            </div>
+        </main>
         <footer class="footer">
-            <div class="byline">The Taco 'Bout It Team &copy; 2019</div>
+            <div class="byline">
+                The Taco 'Bout It Team &copy; 2019
+                <br />
+                All Rights Reserved.
+            </div>
 
             <nav class="nav">
                 <ul class="nav__list">

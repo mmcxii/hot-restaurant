@@ -1,6 +1,8 @@
 /* Abstract */
 :root {
   --clr-dark: #333;
+  --clr-dark-2: #222;
+  --clr-dark-3: #111;
   --clr-light: #eee;
 }
 
@@ -46,6 +48,13 @@ body {
   padding: 0 0.5rem;
 }
 
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto 0;
+}
+
 .footer {
   margin-top: auto;
   display: flex;
@@ -54,6 +63,22 @@ body {
 }
 
 /* Components */
+.card {
+  width: 100%;
+  background: var(--clr-dark-2);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.card__header, .card__body {
+  padding: 1rem;
+}
+
+.card__header {
+  background: var(--clr-dark-3);
+  border-radius: 15px;
+}
+
 input {
   width: 75%;
   height: 5vh;

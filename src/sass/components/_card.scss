@@ -1,0 +1,16 @@
+.card {
+    width: 100%;
+    background: var(--clr-dark-2);
+    border-radius: $rounded;
+    overflow: hidden;
+
+    &__header,
+    &__body {
+        padding: $spacing-sm;
+    }
+
+    &__header {
+        background: var(--clr-dark-3);
+        border-radius: $rounded;
+    }
+}
