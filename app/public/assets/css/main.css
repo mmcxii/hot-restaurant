@@ -23,8 +23,14 @@ body {
 }
 
 /* Layout */
+.header {
+  padding-top: 1rem;
+  text-align: center;
+}
+
 .footer {
   margin-top: auto;
+  padding-bottom: 1rem;
 }
 
 /* Components */
