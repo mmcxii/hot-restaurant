@@ -11,5 +11,10 @@
   margin: 0;
 }
 
+body {
+  background: var(--clr-dark);
+  color: var(--clr-light);
+}
+
 /* Layout */
 /* Components */
