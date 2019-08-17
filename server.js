@@ -8,7 +8,7 @@ const PORT = process.env.port || 3000;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use('/api/', tableRoute);
+app.use('/', tableRoute);
 app.use(index);
 
 app.listen(PORT, () => {

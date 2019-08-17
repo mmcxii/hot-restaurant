@@ -8,7 +8,7 @@ const reservations = require('../../data/reservations');
 // app.use(waitlist);
 // app.use(reservations);
 
-const apiRoute = router.get('/:type', (req, res) => {
+const apiRoute = router.get('/api/:type', (req, res) => {
     const type = req.params.type;
 
     switch(type) {
@@ -23,5 +23,20 @@ const apiRoute = router.get('/:type', (req, res) => {
             break;
     }
 });
+
+router.post('/reserve.html', (req, res) => {
+
+    const reservation = req.body;
+
+    if (reservations.length >= 5) {
+        waitlist.push(reservation);
+        return res.send(false);
+    } else {
+        reservations.push(reservation);
+        return res.send(true);
+    }
+    
+
+})
 
 module.exports = apiRoute;
