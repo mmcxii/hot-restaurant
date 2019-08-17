@@ -1,0 +1,54 @@
+/* Abstract */
+:root {
+  --clr-dark: #333;
+  --clr-light: #eee;
+}
+
+/* Base */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+}
+
+body {
+  background: var(--clr-dark);
+  color: var(--clr-light);
+}
+
+/* Layout */
+.header {
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.footer {
+  margin-top: auto;
+  padding-bottom: 1rem;
+}
+
+/* Components */
+input {
+  width: 75%;
+  height: 5vh;
+  padding: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+fieldset {
+  padding: 10px;
+}
