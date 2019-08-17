@@ -1,0 +1,15 @@
+.nav {
+    &__item {
+        display: inline;
+
+        &:not(:last-child) {
+            border-right: 1px solid var(--clr-light);
+        }
+    }
+
+    &__link {
+        color: inherit;
+        text-decoration: none;
+        padding: 0 $spacing-xs;
+    }
+}

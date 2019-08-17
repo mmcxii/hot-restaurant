@@ -6,20 +6,14 @@
 
 /* Base */
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   min-height: 100vh;
 }
 
@@ -34,8 +28,28 @@ body {
   text-align: center;
 }
 
+.header .nav {
+  margin-top: 0.5rem;
+}
+
+.nav__item {
+  display: inline;
+}
+
+.nav__item:not(:last-child) {
+  border-right: 1px solid var(--clr-light);
+}
+
+.nav__link {
+  color: inherit;
+  text-decoration: none;
+  padding: 0 0.5rem;
+}
+
 .footer {
   margin-top: auto;
+  display: flex;
+  justify-content: space-between;
   padding-bottom: 1rem;
 }
 
@@ -44,9 +58,7 @@ input {
   width: 75%;
   height: 5vh;
   padding: 10px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 fieldset {
